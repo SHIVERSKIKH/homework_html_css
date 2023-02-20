@@ -1,23 +1,28 @@
-* {
-    padding: 0;
-    margin: 0;
-}
 a {
     text-decoration: none;
 }
-.header {
-    padding: 31px 0;
-    margin: 0 0 96px 0;
+.menu {
+    color: cornflowerblue;
+    font-size: 16px;
+    line-height: 20px; 
 }
-.top-title {
-    margin: 0 0 17px 0;
+.title {
+    color: #222222;
+    font-size: 28px;
+    line-height: 36px;
+    font-weight: bold;  
 }
-.top-txt {
-    margin: 0 0 37px 0;
+.txt {
+    font-style: normal; 
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 30px;
+    color: #7D7987; 
 }
-.top-content {
-    margin: 0 0 162px 0;
-}
-.top-logos {
-    padding: 97px 0 96px 0;
+.subtitle {
+    color: coral;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 80px;  
 }
