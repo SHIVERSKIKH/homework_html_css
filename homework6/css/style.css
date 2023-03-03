@@ -83,23 +83,27 @@ ul {
     padding-left: 16px;
     margin-top: auto;
 }
-.top-content-title {
+ .top-content-title {
+    max-width: 377px;
+    width: 100%;
     font-style: normal;
     font-weight: 900;
     font-size: 48px;
     line-height: 58px;
     color: #222222;
-}
-.top-content-heading {
+    text-transform: uppercase;
+} 
+ .top-content-subtitle {
+    display: block;
     font-style: normal;
     font-weight: 700;
     font-size: 32px;
     line-height: 38px;
     color: #222222;
-}
-.color-text {
+} 
+.top-content-subtitle span {
     color: #F16D7F;
-}
+} 
 .advantages-top {
     margin: 0 auto 30px auto;
 }
@@ -401,6 +405,9 @@ ul {
     .header-menu {
         gap: 424px;
     }
+    .menu-nav-list {
+        gap: 0;
+    }
    .menu-nav-burger-link {
     margin-right: 25px;
    }
@@ -418,11 +425,11 @@ ul {
    .top-content-title {
     font-size: 44px;
     line-height: 53px;
-   }
-   .top-content-heading {
+   } 
+    .top-content-subtitle {
     font-size: 24px;
     line-height: 29px;
-   }
+   } 
    .advantages-top-item {
     max-width: 232px;
     min-height: 168px;
