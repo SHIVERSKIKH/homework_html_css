@@ -21,8 +21,8 @@ ul {
 }
 .header-menu {
     display: flex;
-    flex-direction: row;
-    gap: 859px;
+    justify-content: space-between;
+    gap: 33%;
 }
 .header-logo-list {
     display: flex;
@@ -274,7 +274,7 @@ ul {
 
 .product-content-list {
     display: grid;
-    grid-template-columns: repeat(3, 360px);
+    grid-template-columns: repeat(3, minmax(30%, 360px));
     gap: 30px;
 }
 .product-content-item {
