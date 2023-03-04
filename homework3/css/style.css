@@ -1,23 +1,186 @@
+@font-face {
+    font-family: 'Gilroy Bold';
+    src: url('../fonts/Gilroy-Bold.eot');
+    src: url('../fonts/Gilroy-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Gilroy-Bold.woff') format('woff'),
+        url('../fonts/Gilroy-Bold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gilroy Semibold';
+    src: url('../fonts/Gilroy-SemiBold.eot');
+    src: url('../fonts/Gilroy-SemiBold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Gilroy-SemiBold.woff') format('woff'),
+        url('../fonts/Gilroy-SemiBold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gilroy Medium';
+    src: url('../fonts/Gilroy-Medium.eot');
+    src: url('../fonts/Gilroy-Medium.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Gilroy-Medium.woff') format('woff'),
+        url('../fonts/Gilroy-Medium.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gilroy Regular';
+    src: url('../fonts/Gilroy-Regular.eot');
+    src: url('../fonts/Gilroy-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Gilroy-Regular.woff') format('woff'),
+        url('../fonts/Gilroy-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
 * {
     padding: 0;
     margin: 0;
 }
+body {
+    background: #FFFFFF;
+}
+
+.center {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+}
+
 a {
     text-decoration: none;
 }
+
 .header {
     padding: 31px 0;
     margin: 0 0 96px 0;
+    display: flex;
+    justify-content:flex-end;
+    align-items: center;
+    gap: 500px;
 }
+
+ul {
+    list-style-type: none;
+}
+
+.menu-li {
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    gap: 34px;
+}
+
+.menu-link__color {
+    font-family: 'Gilroy Semibold',sans-serif;
+    font-size: 14px;
+    line-height: 16px;
+    color: #F25822;
+}
+
+.menu-link {
+    font-family: 'Gilroy Semibold',sans-serif;
+    font-size: 14px;
+    line-height: 16px;
+    color: #000000;
+}
+
+.menu-list-item a:hover {
+    opacity: 0.7;
+}
+
+.menu-list-item a:active {
+    color: #F25822;
+}
+
 .top-title {
+    font-family: 'Gilroy Bold',sans-serif;
+    width: 522px;
     margin: 0 0 17px 0;
+    font-size: 60px;
+    line-height: 70px;
+    color: #000000;
 }
+
 .top-txt {
+    font-family: 'Gilroy Medium', sans-serif;
+    width: 466px;
     margin: 0 0 37px 0;
+    font-size: 20px;
+    line-height: 23px;
+    color: #888888;
 }
+
 .top-content {
     margin: 0 0 162px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 41px;
 }
+
 .top-logos {
     padding: 97px 0 96px 0;
+}
+
+.top-btn {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 72px;
+}
+
+.btn {
+    font-family: 'Gilroy Bold' ,sans-serif;
+    font-size: 15px;
+    display: block;
+    color: #FFFFFF;
+    background-color: #F25822;
+    border-radius: 50px;
+    max-width: 140px;
+    width: 100%;
+    padding: 15px 36px 16px 35px;
+    box-sizing: border-box;
+    border: none;
+    line-height: 18px;
+}
+
+.btn:hover {
+    color: #F25822;
+    background-color: #FFFFFF;
+}
+
+.btn:active {
+    color: #FFFFFF;
+    background-color: #F25822;
+}
+
+.button {
+    font-family: 'Gilroy Bold', sans-serif;
+    font-size: 15px;
+    line-height: 18px;
+    color: #AAAAAA;
+}
+
+.button:hover {
+    color: #F25822;
+}
+
+.button:active {
+    color: #FFFFFF;
+}
+
+.top-content-img {
+    width: 545px;
+    height: 375px;
+}
+
+.logos {
+    display: flex;
+    gap: 48px;
 }
