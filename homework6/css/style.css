@@ -35,7 +35,7 @@ ul {
 }
 .header-logo-icon:hover {
     border: 3px solid rgb(0, 132, 255);
-    
+
 }
 .header-search-item {
     margin:28px 0 20px 0; 
@@ -119,10 +119,13 @@ ul {
     box-sizing: border-box;
     position: relative;
 }
+.advantages-list-item-big {
+    grid-column: span 3;
+    grid-row: span 3;
+}
 .advantages-top-item:hover {
     background-color: #C4C4C4;
     color: #000;
-    border: 1px solid #000;
     display: block;
     position: relative;
 }
@@ -136,16 +139,18 @@ ul {
     display: block;
     width: 100%;
     height: 100%;
-    background: rgba(58, 56, 56, 0.86);
+    background-size: cover;
+    background-color: rgba(33, 22, 22, 0.7);
+    background-blend-mode: darken;
+     /* background: rgba(58, 56, 56, 0.86); */
     position: absolute;
     top: 0;
-    left: 0;
+    left: 0; 
 }
 .advantages-top-item__big:hover {
     background-color:  #C4C4C4;
     color: #000;
-    border: 1px solid #000;
-    
+
 }
 .advantages-top-item__big:hover:active {
     background-color: transparent;
@@ -430,9 +435,9 @@ ul {
     font-size: 24px;
     line-height: 29px;
    } 
-   .advantages-top-list {
-    grid-template-columns: repeat(3, minmax(30%, 232px));
-    gap: 19px;
+   .advantages-top-item {
+    max-width: 232px;
+    min-height: 168px;
    }
    .women {
     padding: 59px 39px;
@@ -448,6 +453,10 @@ ul {
     min-height: 116px;
     padding: 33px 287px;
     margin: 0 0 109px 0;
+   }
+   .advantages-top-list {
+    grid-template-columns: repeat(3, minmax(30%, 232px));
+    gap: 19px;
    }
    .product-content-list {
     grid-template-columns: repeat(2, minmax(30%, 360px));
@@ -487,6 +496,10 @@ ul {
     grid-template-columns: repeat(1, minmax(30%, 343px));
     gap: 19px;
     }
+    .advantages-top-item {
+        max-width: 343px;
+        min-height: 248px;
+    }
     .women {
     justify-content: center;
     align-items: center;
@@ -498,6 +511,10 @@ ul {
     .kids {
     justify-content: center;
     align-items: center;
+    }
+    .advantages-list-item-big {
+        grid-column: span 1;
+        grid-row: span 1;
     }
     .advantages-top-item__big {
         max-width: 343px;
