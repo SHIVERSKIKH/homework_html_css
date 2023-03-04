@@ -124,48 +124,14 @@ ul {
     grid-row: span 3;
 }
 .advantages-top-item:hover {
-    background-color: #C4C4C4;
-    color: #000;
-    display: block;
-    position: relative;
-}
-.advantages-top-item:hover:active{
-    background-color: transparent;
-    color: #fff;
-    border: 1px solid #fff;
-}
-.advantages-top-item:hover::before{
-    content: "";
-    display: block;
-    width: 100%;
-    height: 100%;
-    background-size: cover;
     background-color: rgba(33, 22, 22, 0.7);
     background-blend-mode: darken;
-     /* background: rgba(58, 56, 56, 0.86); */
-    position: absolute;
-    top: 0;
-    left: 0; 
+    position: relative;  
 }
 .advantages-top-item__big:hover {
-    background-color:  #C4C4C4;
-    color: #000;
-
-}
-.advantages-top-item__big:hover:active {
-    background-color: transparent;
-    color: #fff;
-    border: 1px solid #fff;
-}
-.advantages-top-item__big:hover::before {
-    content: "";
-    display: block;
-    width: 100%;
-    height: 100%;
-    background: rgba(58, 56, 56, 0.86);
-    position: absolute;
-    top: 0;
-    left: 0;
+    background-color: rgba(33, 22, 22, 0.7);
+    background-blend-mode: darken;
+    position: relative; 
 }
 .advantages-top-link {
     font-style: normal;
