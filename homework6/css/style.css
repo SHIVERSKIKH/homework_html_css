@@ -278,16 +278,6 @@ ul {
 .background {
     background-color: #F7E4E2;
 }
-.product-content-img {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    background-color: #F7E4E2;
-    box-sizing: border-box;
-    position: relative;
-    min-height: 420px; 
-}
 .products-item-photo {
     display: block;
     margin: 0 auto;
