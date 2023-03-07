@@ -22,7 +22,6 @@ ul {
 .header-menu {
     display: flex;
     justify-content: space-between;
-    gap: 33%;
 }
 .header-logo-list {
     display: flex;
@@ -39,6 +38,23 @@ ul {
 }
 .header-search-item {
     margin:28px 0 20px 0; 
+}
+.menu-nav-basket-link {
+    position: relative;
+}
+.menu-nav-basket-link span {
+    display: block;
+    width: 19px;
+    height: 19px;
+    background-color: #F16D7F;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    position: absolute;
+    top: -20px;
+    left: 24px;
 }
 .icon-menu{
     fill: #FFFFFF;
@@ -67,7 +83,7 @@ ul {
 }
 .top-content-img {
     max-width: 569px;
-    width: 100%;
+    width: 100%; 
     min-height: 764px;
     box-sizing: border-box;
     background: url(../img/top-content-img.png);
@@ -123,16 +139,6 @@ ul {
     grid-column: span 3;
     grid-row: span 3;
 }
-.advantages-top-item:hover {
-    background-color: rgba(33, 22, 22, 0.7);
-    background-blend-mode: darken;
-    position: relative;  
-}
-.advantages-top-item__big:hover {
-    background-color: rgba(33, 22, 22, 0.7);
-    background-blend-mode: darken;
-    position: relative; 
-}
 .advantages-top-link {
     font-style: normal;
     font-weight: 400;
@@ -155,7 +161,9 @@ ul {
     background: url(../img/women-top.jpg);
     background-repeat: no-repeat;
     background-size:cover;
-
+    position: relative;
+    background-color: rgba(33, 22, 22, 0.7);
+    background-blend-mode: darken;
 }
 .men {
     padding: 105px 125px 105px;
@@ -163,6 +171,9 @@ ul {
     background: url(../img/men-top.jpg);
     background-repeat: no-repeat;
     background-size:cover;
+    position: relative;
+    background-color: rgba(33, 22, 22, 0.7);
+    background-blend-mode: darken;
 }
 .kids {
     padding: 105px 122px 105px;
@@ -170,6 +181,9 @@ ul {
     background: url(../img/kids\ top.jpg);
     background-repeat: no-repeat;
     background-size:cover;
+    position: relative;
+    background-color: rgba(33, 22, 22, 0.7);
+    background-blend-mode: darken;
 }
 .advantages-top-item__big {
     padding: 65px 490px 65px;
@@ -183,6 +197,8 @@ ul {
     background-size:cover;
     margin: 0 0 96px 0;
     position: relative;
+    background-color: rgba(33, 22, 22, 0.7);
+    background-blend-mode: darken;
 }
 .product-title {
     font-style: normal;
@@ -207,7 +223,7 @@ ul {
 }
 .products-item {
     display: block;
-    width: 360px;
+    max-width: 360px;
     position: relative;
     background: #F8F8F8;
     text-decoration: none;
@@ -250,7 +266,7 @@ ul {
 }
 .product-content-item {
     display: block;
-    width: 360px;
+    max-width: 360px;
     background: #F8F8F8;
     text-decoration: none;
     box-sizing: border-box;
@@ -266,7 +282,7 @@ ul {
     background-color: #F7E4E2;
     box-sizing: border-box;
     position: relative;
-    min-height: 420px;
+    min-height: 420px; 
 }
 .products-item-photo {
     display: block;
