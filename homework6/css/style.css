@@ -66,6 +66,10 @@ ul {
     display: flex;
     align-content: center;
 }
+.icon-menu__basket {
+    margin:0 11px;
+    
+}
 .menu-nav-list {
     display: flex;
     flex-direction: row;
@@ -480,7 +484,7 @@ ul {
     }
     .advantages-top-item {
         max-width: 343px;
-        min-height: 248px;
+        min-height: 247px;
     }
     .women {
     justify-content: center;
