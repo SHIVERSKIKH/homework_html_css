@@ -27,7 +27,7 @@ ul {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
-    gap: 41px;
+    gap: 41px; 
 }
 .header-logo-item {
     margin: 18px 0 19px 0;
@@ -129,7 +129,7 @@ ul {
 }
 .advantages-top-list {
     display: grid;
-    grid-template-columns: repeat(3, minmax(30%, 362px));
+    grid-template-columns:  repeat(3, minmax(30%, 362px));
     gap: 30px;
 }
 .advantages-top-item {
@@ -281,6 +281,7 @@ ul {
     background-color: #F7E4E2;
 }
 .products-item-photo {
+    width: 100%;
     display: block;
     margin: 0 auto;
     box-sizing: border-box;
@@ -457,10 +458,10 @@ ul {
 }
 @media (max-width:768px) {
     .center {
-        max-width: 375px;
+        max-width: 343px;
     }
     .header-menu {
-        gap: 200px;
+        gap: 200px; 
     }
     .menu-nav-user-item {
         display: none;
@@ -485,12 +486,14 @@ ul {
         line-height: 24px;
     }
     .advantages-top-list {
-    grid-template-columns: repeat(1, minmax(30%, 343px));
-    gap: 19px;
+     grid-template-columns: repeat(1, minmax(232px, 343px));
+    gap: 32px;
+    justify-content: center;
     }
     .advantages-top-item {
         max-width: 343px;
         min-height: 247px;
+        width: 100%;
     }
     .women {
     justify-content: center;
@@ -511,6 +514,7 @@ ul {
     .advantages-top-item__big {
         max-width: 343px;
         min-height: 111px;
+        width: 100%;
         padding: 30px 91px 31px 92px;
         margin: 0 auto 64px 0;
     }
