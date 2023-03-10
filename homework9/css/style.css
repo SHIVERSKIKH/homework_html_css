@@ -378,6 +378,7 @@ ul {
     padding: 14px;
     box-sizing: border-box;
     background-color: #FFFFFF;
+    transition: background-color 1s ease;
 }
 .content-button:hover {
     color: #FFFFFF;
@@ -538,6 +539,7 @@ ul {
     align-items: center;
     text-align: center;
     color: #FFFFFF;
+    transition: background-color 1s ease;
 }
 .form-submit:hover {
     color:#F16D7F;
@@ -571,6 +573,7 @@ ul {
     width: 31.45px;
     height: 32px;
     background-color: #FFFFFF;
+    transition: background-color 1s ease;
 
 }
 .network-logos-item:hover {
