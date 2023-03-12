@@ -45,17 +45,55 @@ header {
 .header-search-item {
     margin:28px 0 20px 0; 
 }
+.page-header-search-form {
+    position: relative;
+}
+.page-header-search-btn {
+    width: 0px;
+    min-height: 20px;
+    padding: 0px;
+    box-sizing: border-box;
+    background-color: transparent;
+    border: none;
+    position: absolute;
+    top: -1px;
+    left: 33px;
+    color: #000;
+    font-size: 16px;
+    font-family: Arial;
+    text-transform: capitalize;
+  }
+  .page-header-search-btn:focus {
+    width: 180px;
+    min-height: 20px;
+    transition: width 1s ease;
+    border: 2px solid #fff;
+    padding: 5px;
+    background-color: #FFFFFF;
+  }
+  .page-header-search-btn:focus ~ label > svg {
+    fill: rgb(0, 132, 255);
+  }
+  .page-header-search-btn:active ~ label > svg {
+    fill: red;
+  }
+  .icon-menu{
+    fill: #FFFFFF;
+}
+.icon-menu:hover {
+    fill:rgb(0, 132, 255);
+}
 .menu-nav-basket-link {
     position: relative;
 }
 .menu-btn {
     display: block;
+    box-sizing: border-box;
 }
 .box {
     visibility: hidden;
-    max-width: 232px;
-    width: 100%;
-    min-height: 634px;
+    width: 232px;
+    height: 634px;
     background-color: #FFFFFF;
     position: absolute;
     top: 80px;
@@ -155,12 +193,6 @@ input[type="checkbox"]:checked ~ .box {
   .menu-list-close-btn:active::after{
     background: #535353;
   }
-.icon-menu{
-    fill: #FFFFFF;
-}
-.icon-menu:hover {
-    fill:rgb(0, 132, 255);
-}
 .menu-nav {
     display: flex;
     align-content: center;
@@ -495,9 +527,6 @@ input[type="checkbox"]:checked ~ .box {
     justify-content: center;
     gap: 30px;
 }
-.promo-info-item {
-
-}
 .promo-content {
     display: flex;
     flex-direction: column;
@@ -640,6 +669,9 @@ input[type="checkbox"]:checked ~ .box {
     color: #FFFFFF;
     transition: background-color 1s ease;
 }
+input[type="email"]:focus {
+    cursor: pointer;
+}
 .form-submit:hover {
     color:#F16D7F;
     background-color: #FFFFFF;
@@ -706,7 +738,7 @@ input[type="checkbox"]:checked ~ .box {
   @media (max-width:1155px) {
     .center {
         max-width: 980px;
-    }
+    }  
     .advantages-list-item-big {
         grid-column: span 3;
         grid-row: span 3;
@@ -736,6 +768,7 @@ input[type="checkbox"]:checked ~ .box {
    }
    .menu-nav-user-link {
     margin-right: 42px;
+    margin-left: 25px;
    }
    .top-content-img {
     max-width: 386px;
